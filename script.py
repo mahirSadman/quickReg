@@ -10,7 +10,7 @@ list_of_lists = list()
 
 # connect to google sheet
 try:
-    sa = gspread.service_account(filename="quickreg-354618-15c4ca8155fe.json")
+    sa = gspread.service_account(filename="your individual json file")
     sh = sa.open("QuickReg")
     worksheet = sh.worksheet("Sheet1")
 except:
